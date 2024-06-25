@@ -8,14 +8,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="h-full">
-   <!--
-  This example requires updating your template:
-
-  ```
-  <html class="h-full bg-gray-100">
-  <body class="h-full">
-  ```
--->
 <div class="min-h-full">
     <nav class="bg-gray-800">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -29,7 +21,7 @@
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 <a href="/" class="text-white">Home</a>
                 <a href="/about" class="text-white">About</a>
-                <a href="/job" class="text-white">Jobs</a>
+                <a href="/jobs" class="text-white">Jobs</a>
                 <a href="/contact" class="text-white">Contact</a>
               </div>
             </div>
@@ -90,8 +82,9 @@
     </nav>
   
     <header class="bg-white shadow">
-      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 sm:flex sm:justify-between">
         <h1 class="text-3xl font-bold tracking-tight text-gray-900">{{$heading}}</h1>
+        <a href="/jobs/create" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">create job</a>
       </div>
     </header>
     <main>

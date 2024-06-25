@@ -5,7 +5,7 @@
     <h1>Open jobs</h1>
     <div>
         @foreach ($jobs as $job )
-        <a href="/job/{{$job->id}}" class="block px-4 py-6 bg-gray-300 rounded-lg m-3">
+        <a href="/jobs/{{$job->id}}" class="block px-4 py-6 bg-gray-300 rounded-lg m-3">
             <div class="text-blue-400">
                 {{$job->employer->name}}
             </div>
